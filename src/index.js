@@ -37,7 +37,9 @@ module.exports = function solveSudoku(matrix) {
   }
 
   //запускаем цикл который будет обходить матрицу
-  while ( true) {
+  let r = 1000;
+  while ( r > 1) {
+    r--;
     let numberUnknown = 0
     for (let i = 0; i < matrix.length; i++) {
       for (let j = 0; j < matrix[i].length; j++) {
